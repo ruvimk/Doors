@@ -1,0 +1,4 @@
+dir
+ren hello.cpp.cpp hello.cpp
+\dm\bin\dmc -I\dm\stlport\stlport hello.cpp
+pause

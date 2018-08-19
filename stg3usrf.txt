@@ -1,0 +1,60 @@
+Stage 3 User Functions: 
+
+GetMemorySize 
+	0 parameters 
+	return: 
+		EAX =  number of 64KB chunks after 16MB 
+		EBX =  number of bytes between 1MB and 16MB 
+; 
+
+print 
+	1 parameter: 
+		theString:DWORD 
+	return: 
+		the last character in the string theString 
+; 
+
+putchar 
+	1 parameter: 
+		theCharacter:DWORD 
+	return: 
+		theCharacter     if everything went okay 
+		0                otherwise 
+; 
+
+cls 
+	0 parameters 
+; 
+
+GetCursor 
+	0 parameters 
+	return: 
+		low-order word  =  cursor column 
+		high-order word =  cursor row 
+; 
+
+SetCursor 
+	1 (DWORD) or 2 (WORD) parameters: 
+		Either: 
+			cursorPosition:DWORD 
+		Or: 
+			cursorColumn:WORD 
+			cursorRow:WORD 
+; 
+
+StrCmp1 
+	2 parameters: 
+		string1:DWORD 
+		string2:DWORD 
+	return: 
+		0 if the strings are (or are almost) equal 
+		string1 - string2 otherwise 
+; 
+
+MemoryCopy 
+	3 parameters: 
+		pMem1:DWORD 
+		pMem2:DWORD 
+		nBytes:DWORD 
+; 
+

@@ -1,0 +1,3 @@
+\dm\bin\dmc -I\dm\stlport\stlport hello.cpp
+if not errorlevel \dm\bin\dmc -I\dm\stlport\stlport hello.cpp.cpp
+pause

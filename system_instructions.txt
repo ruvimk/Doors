@@ -1,0 +1,23 @@
+
+Load/Store System Registers: 
+LGDT	Load Global Descriptor Table 
+SGDT	Store Global Descriptor Table 
+LIDT	Load Interrupt Descriptor Table 
+SIDT	Store Interrupt Descriptor Table 
+LLDT	Load Local Descriptor Table 
+SLDT	Store Local Descriptor Table 
+LTR 	Load Task Register 
+STR 	Store Task Register 
+
+Performance Monitoring and Time Stamp: 
+RDPMC	Read Performance-Monitoring Counter 
+RDTSC	Read Time-Stamp Counter 
+
+Model-Specific Registers: 
+RDMSR	Read Model-Specific Register 
+WRMSR	Write Model-Specific Register 
+
+Streaming SIMD Extensions Control/Status Word: 
+LDMXCSR 	Load Streaming SIMD Extensions Control/Status Word From Memory 
+STMXCSR 	Store Streaming SIMD Extensions Control/Status Word To Memory 
+

@@ -1,0 +1,7 @@
+
+
+Segment Selector: 
+	Contains: 
+		Index	bits 3..15	Selects one of 8192 descriptors in GDT or LDT 	base of table + (this * 8) = address of descriptor 
+		TI  	bit 2   	(Table Indicator flag)   0 = use GDT;  1 = use LDT; 
+		RPL 	bits 0..1	(Requested Privilege Level) 
